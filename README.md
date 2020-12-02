@@ -1,1 +1,1 @@
-# sydney-s_marathon
+# sydney_marathon
