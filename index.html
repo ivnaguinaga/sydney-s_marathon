@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Sydney Running Festival </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Andika+New+Basic:wght@700&display=swap" rel="stylesheet">
+    <!-- esto es un intento de cambiar letra esta es la tocha para el header mirar css -->
+</head>
+
+<body>
+    <div class="header" id="header">
+        <h1>2021 Sydney</h1>
+        <h1>Running Festival</h1>
+        <button class="register">Register now!</button>
+    </div>
+
+    <div class="map1">
+        <div class="map2">
+            <m>Run across the Sydney Harbour Bridge and finish at the Sydney Opera House</m>
+        </div>
+
+        <div class="map3">
+            <img src="img/2023-BSRF_MA_Map_2020-628x512-01-768x626.jpg" alt="rarito" id="img1">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3313.449442417298!2d151.20859841520974!3d-33.85230628066085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12ae5d25ead5e3%3A0x68948eb717c0c43e!2sPuente%20del%20puerto%20de%20S%C3%ADdney!5e0!3m2!1ses!2ses!4v1608131195820!5m2!1ses!2ses"
+                width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+
+    </div>
+
+    <div class="count1">
+        <h2>Countdown Sydney Running Festival 2021</h2>
+
+        <p id="demo"></p>
+
+        <script>
+            // Set the date we're counting down to
+            var countDownDate = new Date("2021-09-19 06:00").getTime();
+
+            // Update the count down every 1 second
+            var x = setInterval(function() {
+
+                // Get today's date and time
+                var now = new Date().getTime();
+
+                // Find the distance between now and the count down date
+                var distance = countDownDate - now;
+
+                // Time calculations for days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                // Output the result in an element with id="demo"
+                document.getElementById("demo").innerHTML = days + "d " + hours + "h " +
+                    minutes + "m " + seconds + "s ";
+
+                // If the count down is over, write some text 
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("demo").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+        </script>
+    </div>
+
+    <div class="winners">
+        <table id="customers">
+            <tr>
+                <th>Name</th>
+                <th>Time</th>
+                <th>Country</th>
+            </tr>
+            <tr>
+                <td>Linda Stefanie Atmadja</td>
+                <td>02:28:55</td>
+                <td>Indonesia</td>
+            </tr>
+            <tr>
+                <td>Charlie Blanch</td>
+                <td>02:48:29</td>
+                <td>Australia</td>
+            </tr>
+            <tr>
+                <td>Craig Bramley</td>
+                <td>02:59:32</td>
+                <td>Australia</td>
+            </tr>
+            <tr>
+                <td>Richard Egan</td>
+                <td>03:02:34</td>
+                <td>Australia</td>
+            </tr>
+            <tr>
+                <td>Vince Umbers</td>
+                <td>03:10:41</td>
+                <td>Australia</td>
+            </tr>
+            <tr>
+                <td>Laurent Huysentruyt</td>
+                <td>03:10:51</td>
+                <td>Belgium</td>
+            </tr>
+            <tr>
+                <td>Nicolas Delporte</td>
+                <td>03:13:28</td>
+                <td>Australia</td>
+            </tr>
+            <tr>
+                <td>Anthony Slaven</td>
+                <td>03:16:10</td>
+                <td>Australia</td>
+            </tr>
+            <tr>
+                <td>Maciej Turzynski</td>
+                <td>03:18:01</td>
+                <td>Australia</td>
+            </tr>
+            <tr>
+                <td>Cameron Hyde</td>
+                <td>03:18:29</td>
+                <td>Australia</td>
+            </tr>
+        </table>
+
+    </div>
+
+    <div class="win2">
+        <h3>WINNERS 2020 </h3>
+    </div>
+
+    <div class="row">
+        <div class="txt">
+            <t>10 YEARS AGO</t>
+            <iframe width="500" height="300" src="https://www.youtube.com/embed/v42g7g4bnrA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> </div>
+        <div class="disc">
+            <g>DISCORD</g>
+            <iframe src="https://discord.com/widget?id=788804085507686471&theme=dark" width="500" height="300" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts" id="wdisc"></iframe>
+        </div>
+    </div>
+
+    <div class="pdf">
+        <p>
+            <a href="img/Charity Infographic.pdf" download>
+                <img src="img/unnamed.png" alt="PDF" width="104" height="142">
+            </a>
+    </div>
+</body>
